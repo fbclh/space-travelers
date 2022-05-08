@@ -33,6 +33,11 @@ Run
 - GitHub: [github.com/fbclh](https://github.com/fbclh)
 - LinkedIn: [linkedin.com/in/fbclh](https://www.linkedin.com/in/fbclh)
 
+### Sediqullah Badakhsh
+
+- GitHub: [github.com/sediqullahbadakhsh](https://github.com/sediqullahbadakhsh)
+- LinkedIn: [https://www.linkedin.com/in/sediqullah-badakhsh-999053a8/](https://www.linkedin.com/in/sediqullah-badakhsh-999053a8/)
+
 ## Contributing
 
 Contributions, issues, and feature requests are welcome, feel free to check the [issues page](../../issues/).
