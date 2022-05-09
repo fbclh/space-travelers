@@ -1,5 +1,5 @@
-const FETCH_SUCCESS = 'space-travelers/rockets/FETCH_SUCCESS';
-const rocketURL = 'https://api.spacexdata.com/v3/rockets';
+const FETCH_SUCCESS = 'space-travelers/missions/FETCH_SUCCESS';
+const missionsURL = 'https://api.spacexdata.com/v3/missions';
 const initialState = [];
 
 const reducer = (state = initialState, action) => {
@@ -19,14 +19,12 @@ export const fetchDataSuccess = (payload) => ({
 });
 
 export const fetchData = () => async (dispatch) => {
-  const response = await fetch(rocketURL);
+  const response = await fetch(missionsURL);
   const data = await response.json();
   const info = Object.entries(data).map(([key, value]) => ({
-    id: key,
-    rocket_name: value.name,
+    mission_id: key,
+    mission_name: value.mission_name,
     description: value.description,
-    flickr_images: value.flickr_images[0],
-    reserved: false,
   }));
   dispatch(fetchDataSuccess(info));
 };
