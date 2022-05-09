@@ -18,11 +18,11 @@ export const fetchDataSuccess = (payload) => ({
   payload,
 });
 
-export const fetchData = () => async (dispatch) => {
+export const fetchMissions = () => async (dispatch) => {
   const response = await fetch(missionsURL);
   const data = await response.json();
   const info = Object.entries(data).map(([key, value]) => ({
-    mission_id: key,
+    id: key,
     mission_name: value.mission_name,
     description: value.description,
   }));
