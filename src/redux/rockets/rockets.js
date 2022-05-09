@@ -18,12 +18,12 @@ export const fetchDataSuccess = (payload) => ({
   payload,
 });
 
-export const fetchData = () => async (dispatch) => {
+export const fetchRockets = () => async (dispatch) => {
   const response = await fetch(rocketURL);
   const data = await response.json();
   const info = Object.entries(data).map(([key, value]) => ({
     id: key,
-    rocket_name: value.name,
+    rocket_name: value.rocket_name,
     description: value.description,
     flickr_images: value.flickr_images[0],
     reserved: false,
