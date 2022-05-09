@@ -1,0 +1,37 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  margin-left: 3rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ul-links {
+  display: flex;
+  list-style: none;
+  margin-right: 3rem;
+}
+
+.li-links {
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.li-links:last-child {
+  padding-right: 0;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.li-links a.active {
+  text-decoration: underline;
+}
