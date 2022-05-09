@@ -6,8 +6,8 @@ const Missions = () => {
   return (
     <section className="rockets">
       {missions.map((item) => (
-        <div className="flex" key={item.id}>
-          <div className="rocket-info">
+        <div key={item.id}>
+          <div>
             <h2>{item.mission_name}</h2>
             <p>{missions[0].description}</p>
           </div>
