@@ -35,3 +35,11 @@
 .li-links a.active {
   text-decoration: underline;
 }
+
+/* Filter Container */
+.filter-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
