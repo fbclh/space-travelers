@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<tr>
+  <td
+    className="td"
+  />
+  <td
+    className="td td-button"
+  >
+    <button
+      className="btn btn-outline-danger"
+      onClick={[Function]}
+      type="button"
+    >
+      Leave Mission
+    </button>
+  </td>
+  <td
+    className="td td-button"
+  >
+    <button
+      className="btn btn-secondary"
+      onClick={[Function]}
+      type="button"
+    >
+      Read More
+    </button>
+  </td>
+</tr>
+`;
