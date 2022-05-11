@@ -10,23 +10,19 @@ export default function RocketsFilter() {
     <div className="reserved-rockets">
       <h1>My Rockets</h1>
       <div className="reserved-list">
-        {rockets.length === 0 ? (
-          <p>No Rockets reserved</p>
-        ) : (
-          rockets.map((item) => (
-            <ul key={item.id}>
-              <li className="reserved">
-                {item.rocket_name}
-                <button
-                  type="button"
-                  onClick={() => dispatch(cancelReservation(item.id))}
-                >
-                  Cancel Reservation
-                </button>
-              </li>
-            </ul>
-          ))
-        )}
+        {rockets.map((item) => (
+          <ul key={item.id}>
+            <li className="reserved">
+              {item.rocket_name}
+              <button
+                type="button"
+                onClick={() => dispatch(cancelReservation(item.id))}
+              >
+                Cancel Reservation
+              </button>
+            </li>
+          </ul>
+        ))}
       </div>
     </div>
   );
