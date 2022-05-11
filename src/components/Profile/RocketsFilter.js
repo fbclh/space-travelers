@@ -1,6 +1,5 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { cancelReservation } from '../../redux/rockets/rockets';
-import './rocketsfilter.css';
 
 export default function RocketsFilter() {
   const reservedRockets = useSelector((state) => state.rocketsReducer);
@@ -8,26 +7,24 @@ export default function RocketsFilter() {
   const dispatch = useDispatch();
   return (
     <div className="reserved-rockets">
-      <h1>My Rockets</h1>
-      <div className="reserved-list">
-        {rockets.length === 0 ? (
-          <p>No Rockets reserved</p>
-        ) : (
-          rockets.map((item) => (
-            <ul key={item.id}>
-              <li className="reserved">
-                {item.rocket_name}
-                <button
-                  type="button"
-                  onClick={() => dispatch(cancelReservation(item.id))}
-                >
-                  Cancel Reservation
-                </button>
-              </li>
-            </ul>
-          ))
-        )}
-      </div>
+      <h2>My Rockets</h2>
+      <table className="table">
+        {!(rockets.length > 0) && <p>No missions joined</p>}
+        {rockets.map((item) => (
+          <tr key={item.id}>
+            <td className="td reserved">
+              {item.rocket_name}
+              <button
+                className="btn btn-outline-danger"
+                type="button"
+                onClick={() => dispatch(cancelReservation(item.id))}
+              >
+                Cancel Reservation
+              </button>
+            </td>
+          </tr>
+        ))}
+      </table>
     </div>
   );
 }
