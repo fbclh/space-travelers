@@ -5,8 +5,8 @@ const Missions = () => {
   const missions = useSelector((state) => state.missionsReducer);
 
   return (
-    <div>
-      <table className="table-bordered table-striped table-hover">
+    <div className="container">
+      <table className="table table-striped table-bordered">
         <thead>
           <tr className="fs-5">
             <th>Mission</th>
@@ -24,13 +24,6 @@ const Missions = () => {
               id={mission.id}
             />
           ))}
-          {/* <div key={item.id}>
-              <div>
-                <h2>{item.mission_name}</h2>
-                <p>{missions[0].description}</p>
-              </div>
-            </div>
-          ))} */}
         </tbody>
       </table>
     </div>
