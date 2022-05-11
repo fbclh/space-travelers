@@ -1,0 +1,17 @@
+.reserved-list {
+  width: 90%;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.reserved-list > ul li {
+  padding: 10px;
+  font-style: none;
+  list-style-type: none;
+  border: solid 1px #000;
+}
+.reserved {
+  display: flex;
+  justify-content: space-between;
+}
