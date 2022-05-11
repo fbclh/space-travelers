@@ -24,20 +24,28 @@ export default function MissionList({
       <td>{missionDescription}</td>
       {reserved ? (
         <td>
-          <span>Active Members</span>
+          <span className="badge bg-success">Active Members</span>
         </td>
       ) : (
         <td>
-          <span>Not a Member</span>
+          <span className="badge bg-secondary">Not a Member</span>
         </td>
       )}
       <td>
         {reserved ? (
-          <button type="button" onClick={handleLeaveMission}>
+          <button
+            className="btn btn-outline-danger"
+            type="button"
+            onClick={handleLeaveMission}
+          >
             Leave
           </button>
         ) : (
-          <button type="button" onClick={handleJoinMission}>
+          <button
+            className="btn btn-outline-secondary"
+            type="button"
+            onClick={handleJoinMission}
+          >
             Join
           </button>
         )}

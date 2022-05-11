@@ -54,6 +54,7 @@ export const fetchMissions = () => async (dispatch) => {
     mission_name: value.mission_name,
     description: value.description,
     reserved: false,
+    wikipedia: value.wikipedia,
     //
     // id: key,
     // missionName: value.mission_name,
