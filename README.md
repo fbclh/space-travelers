@@ -4,7 +4,7 @@ The web app retrieves real data from SpaceX API, and provides commercial and sci
 
 ## Live Demo
 
-[space-travelers-fbclh.netlify.app](https://space-travelers-fbclh.netlify.app/)
+[space-travelers-fbclh.vercel.app](https://space-travelers-fbclh.vercel.app/)
 
 ## Built With
 
