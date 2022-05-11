@@ -8,7 +8,7 @@ The web app retrieves real data from SpaceX API, and provides commercial and sci
 
 ## Built With
 
-- Create React App | Redux | React Router | Jest | Testing Library | API
+- React | Redux | React Router | Jest | Testing Library | API
 
 ## Getting Started
 
