@@ -74,7 +74,6 @@
 }
 
 tbody,
-td,
 tfoot,
 th,
 thead,
@@ -96,4 +95,17 @@ tr {
   gap: 2rem;
   margin-top: 3rem;
   margin-left: 3rem;
+}
+
+.reserved {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reserved-rockets {
+  margin-right: 3.87rem;
+}
+
+td {
+  padding: 0.375rem;
 }
