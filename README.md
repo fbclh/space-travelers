@@ -10,7 +10,7 @@ The web app retrieves real data from SpaceX API, and provides commercial and sci
 
 - React | Redux | React Router | Jest | Testing Library | API
 
-## Getting Started
+## Setup
 
 Clone
 
@@ -24,6 +24,12 @@ Run
    cd space-travelers
    npm install
    npm start
+```
+
+Tests
+
+```sh
+   npm run test
 ```
 
 ## Authors
