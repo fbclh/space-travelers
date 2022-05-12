@@ -1,0 +1,110 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 3.87rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-container h1 {
+  font-size: 1.75rem;
+}
+
+.ul-links {
+  display: flex;
+  list-style: none;
+  margin-right: 3.87rem;
+}
+
+.li-links {
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.li-links:last-child {
+  padding-right: 0;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.li-links a.active {
+  text-decoration: underline;
+}
+
+/* Rockets */
+.rockets {
+  padding: 15px 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rocket {
+  display: flex;
+  gap: 15px;
+}
+
+.rocket-image {
+  width: 250px;
+}
+
+.badge {
+  margin-right: 0.5rem;
+}
+
+/* Missions */
+.table > :not(:first-child) {
+  border-top: 1px solid #dee2e6;
+}
+
+.container {
+  padding: 0;
+  margin: 1rem auto;
+}
+
+tbody,
+tfoot,
+th,
+thead,
+tr {
+  border-width: 1px;
+}
+
+/* Profile */
+.td-button {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.filter-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.reserved {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reserved-rockets {
+  margin-right: 3.87rem;
+}
+
+td {
+  padding: 0.375rem;
+}
